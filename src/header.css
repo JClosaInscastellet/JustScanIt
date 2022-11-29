@@ -1,0 +1,61 @@
+.Header{
+    background-color: #FFFFFF;
+    /* Font*/
+    color: #3EADA6;
+    font-family:Roboto;
+    font-size: 24px;
+    /* Display*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.Header button{
+    background-color: #3EADA6;
+    /* Font*/
+    color: #FFFFFF;
+    font-family:Roboto;
+    font-weight: bold;
+    /* Button stuff*/
+    border-radius: 14px;
+    padding: 15px;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-color: rgba(0, 0, 0, 0);
+    font-size: 18px;
+    transition: 0.3s;
+} 
+.Header button:hover{
+    border: solid #EC6261 2px;
+    color: #EC6261;
+    background-color: white;
+    
+}
+.Header img{
+    /* possitioning*/
+    padding-right: 7%;
+    width: 240px;
+    height: 70px;
+    object-fit: cover;
+    object-position: 0% 60%;   
+    margin-bottom: 35px; 
+}
+
+@media only screen and (max-width: 768px) {
+    .Header button {
+        display: none;
+    }
+    .Header a{
+        display: none;
+    }
+    .Header p{
+        display: none;
+    }
+    .Header img{
+        margin: 0px;
+        margin-top: 70px;
+        align-self: center;
+        margin-left: 15%;
+    }
+
+}

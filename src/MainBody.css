@@ -1,0 +1,103 @@
+.MainBody {
+    /* display*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.MainBody h1 {
+    /* font*/
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+}
+
+.MainBody h2 {
+    /* font*/
+    font-family: Roboto;
+    color: rgba(0, 0, 0, 60%);
+    font-weight: 300;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+}
+
+.MainBody input {
+    transition: 0.5s;
+    padding: 17px;
+    text-align: center;
+    border: #EC6261 solid 1px;
+    outline: none;
+    font-size: 17px;
+
+
+}
+
+.line {
+    display: block;
+    height: 1px;
+    background-color: black;
+    width: 280px;
+}
+.MainBody input:focus {
+    background-color: #EC6261;
+    color: white;
+    border: white solid 1px;
+
+
+}
+
+.MainBody ::placeholder {
+    font-size: 17px;
+    color: #EC6261;
+    opacity: 1;
+}
+
+
+.MainBodySmall {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .MainBody {
+        display: none;
+    }
+
+    .MainBodySmall {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    .MainBodySmall input{
+        outline: none;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        font-size: 17px;
+/*        border-width: 0 0 1px;*/
+        border-width: 0 0 0px;
+
+        
+    }
+    .MainBodySmall ::placeholder{
+        text-align: center;
+        font-size: 17px;
+    }
+    .shape{
+        display: flex;
+        margin: 15px;
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+        background-color: #3EADA6;
+        
+        width: 100%;
+    }
+
+}
