@@ -1,2 +1,2 @@
-#Just Scann it
+# Just Scann it
 React project for school
