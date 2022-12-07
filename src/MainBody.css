@@ -4,6 +4,24 @@
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+
+}
+
+.shape {
+    background-color: lightgray;
+    clip-path: polygon(67% 67%, 81% 60%, 91% 48%, 100% 28%, 100% 100%, 0 99%, 0 71%, 11% 65%, 29% 62%, 47% 64%);
+    padding: 45vh;
+    z-index: -1;
+}
+
+.overlayMB {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .MainBody h1 {
@@ -41,6 +59,7 @@
     background-color: black;
     width: 280px;
 }
+
 .MainBody input:focus {
     background-color: #EC6261;
     color: white;
@@ -56,48 +75,105 @@
 }
 
 
-.MainBodySmall {
+.overlayMBS {
     display: none;
 }
 
 
-@media only screen and (max-width: 768px) {
-    .MainBody {
+
+@media only screen and (max-width: 720px) {
+    .overlayMB {
         display: none;
     }
 
-    .MainBodySmall {
-        margin-top: 50px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    .MainBodySmall input{
-        outline: none;
-        padding: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: center;
-        font-size: 17px;
-/*        border-width: 0 0 1px;*/
-        border-width: 0 0 0px;
-
-        
-    }
-    .MainBodySmall ::placeholder{
-        text-align: center;
-        font-size: 17px;
-    }
-    .shape{
-        display: flex;
-        margin: 15px;
-        padding: 15px;
-        align-items: center;
-        flex-direction: column;
-        background-color: #3EADA6;
-        
+    .overlayMBS {
+        display: block;
+        position: relative;
         width: 100%;
+        height: 100%;
+
+    }
+
+    .shape {
+        background-color: #3EADA6;
+        clip-path: polygon(53% 31%, 100% 0, 100% 100%, 0 100%, 0 38%);
+        padding: 38vh;
+        
+        z-index: -1;
+    }
+
+    .MainBodySmall {
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        margin-top: 9vh;
+
+
+    }
+
+    .MainBodySmall div {
+        width: 80%;
+
+    }
+
+    .MainBodySmall input {
+        
+        outline: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 17px;
+        /*        border-width: 0 0 1px;*/
+        border-width: 0 0 0px;
+        display: inline;
+        width: 80%;
+        margin-left: 9%;
+        background-color: rgba(0, 0, 0, 0);
+        
+
+
+    }
+
+    .MainBodySmall ::placeholder {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .MainBodySmall button {
+        margin-top: 20px;
+        background-color: #3EADA6;
+        /* Font*/
+        color: white;
+        font-family: Roboto;
+        font-weight: bold;
+        /* Button stuff*/
+        border-radius: 14px;
+        padding: 15px;
+        padding-left: 55px;
+        padding-right: 55px;
+        border-color: white;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+
+    .MainBodySmall .sign {
+        margin-top: 80px;
+        background-color: white;
+        color: #3EADA6;
+        border-color: #3EADA6;
+        border-color: rgba(0, 0, 0, 0%);
+
+
+    }
+
+    
+    .MainBodySmall .fa-solid{
+        display: inline;
     }
 
 }

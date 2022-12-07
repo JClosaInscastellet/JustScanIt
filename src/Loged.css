@@ -1,0 +1,48 @@
+.loggedBody{
+    padding-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.logedHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.logedHeader img{
+    width: 60%;
+}
+
+.menuLinks{
+    margin-top: 10px;
+    transition: 0.5s;
+    background-color: #318c86;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+.menuLinks a{
+    width: 100%;
+}
+.menuLinks button{
+    background-color: #318c86;
+    padding: 10px;
+    text-decoration: none;
+    font-style: unset;
+    font-family: Roboto;
+    color: white;
+    border-width: 0px 1px 0px 1px;
+    border-color: white;
+    width:100%;  
+}
+
+.fa-bars{
+    font-size: 50px;
+    margin-top: 20px;
+    color: #3EADA6;
+    
+}
