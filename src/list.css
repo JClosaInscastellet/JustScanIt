@@ -1,0 +1,130 @@
+.historyDiv {
+    margin-top: 16vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+
+
+}
+
+.pElements {
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+
+}
+
+.historyDiv p {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+    margin-left: 32vw;
+    color: #3EADA6;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.pcard {
+    padding-top: 10px;
+    margin-left: 30vw;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    /* -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.75);*/
+    display: flex;
+    width: 40%;
+    font-family: Roboto;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pcard h1 {
+    font-size: medium;
+    color: rgba(0, 0, 0, 0.80);
+    align-items: flex-end;
+
+}
+
+.pcard h2 {
+    font-size: medium;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.90);
+    align-items: flex-end;
+
+}
+
+.pcard h3 {
+    font-size: small;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.90);
+    align-items: flex-end;
+    
+}
+
+.pcard img {
+    margin-right: 15px;
+    width: 9vw;
+    height: max-content;
+}
+
+.historyDiv hr {
+    width: 40%;
+    color: rgba(0, 0, 0, 0.80)
+}
+
+@media only screen and (max-width: 720px) {
+    .pcard {
+        max-height: 19vh;
+        overflow: hidden;
+        margin-left: 10vw;
+        margin-bottom: 0px;
+        width: 80vw;
+    }
+
+    .pcard img {
+        margin-right: 15px;
+        width: 21vw;
+        height: max-content;
+    }
+
+    .historyDiv hr {
+        width: 80%;
+        color: rgba(0, 0, 0, 0.80)
+    }
+
+    .historyDiv p {
+        display: inline-block;
+        margin-top: -5px;
+        margin-bottom: 5px;
+        align-self: flex-start;
+        margin-left: 11vw;
+        color: #3EADA6;
+        font-size: x-large;
+        font-weight: bold;
+        overflow-y: auto;
+    }
+
+    .pElements {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .pcard h1 {
+        align-self: flex-end;
+    }
+
+    .pcard h2 {
+        align-self: flex-end;
+    }
+
+    .pcard h3 {
+        align-self: flex-end;
+
+    }
+}

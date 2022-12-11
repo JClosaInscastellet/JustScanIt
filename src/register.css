@@ -1,35 +1,25 @@
-
-.loginBody {
-    position: absolute;
-    padding-top: 15vh;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 10%;
-    z-index: 999;
-
-}
-
-/* 3EADA6*/
-.loginBox {
-    margin-top: 10vh;
-    background-color: rgba(9, 9, 90, 0);
+.registerBody{
+    width: 100vw;
+    height: 99vh;
     display: flex;
     flex-direction: column;
-    padding-top: 1%;
-    padding-bottom: 1%;
     align-items: center;
+}
+
+.registerDiv{
     width: 30%;
+    padding-bottom: 15px;
+    margin-top: 22vh;
     border-radius: 25px;
     -webkit-box-shadow: 3px 10px 41px 3px rgba(62, 173, 166, 1);
     -moz-box-shadow: 3px 10px 41px 3px rgba(62, 173, 166, 1);
     box-shadow: 3px 10px 41px 3px rgba(62, 173, 166, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.loginBox input {
-    width: 80%;
+.registerDiv input {
+    width: 85%;
     padding: 2%;
     border-radius: 8 px;
     border-width: 0 0 2px;
@@ -39,17 +29,16 @@
 
 }
 
-.loginBox input:focus {
+.registerDiv input:focus {
     outline: none;
     border-color: darkslategray;
 
 }
 
-.loginBox input::placeholder {
+.registerDiv input::placeholder {
     text-align: center;
 }
-
-.loginBox button {
+.registerDiv button {
     background-color: #3EADA6;
     /* Font*/
     color: #FFFFFF;
@@ -67,15 +56,15 @@
 
 }
 
-.loginBox button:hover  {
+.registerDiv button:hover  {
     border-color: #EC6261;
     background-color: white;
 
 }
-.loginBox button:hover .fa-arrow-right{
+.registerDiv button:hover .fa-arrow-right{
     color: #EC6261;
 }
-.loginBox button:hover .fa-arrow-right p{
+.registerDiv button:hover .fa-arrow-right p{
     color: #EC6261;
 }
 
@@ -88,24 +77,4 @@
 .fa-arrow-right {
     color: white; 
     font-size: x-large;
-}
-
-.overlayL {
-    position: relative;
-    width: 100%;
-    height: 86vh;
-    overflow: hidden;
-}
-
-.shapeL {
-    
-    background-color: rgba(62, 173, 166, 1);
-
-    padding: 45vh;
-    clip-path: polygon(67% 67%, 81% 60%, 91% 48%, 100% 28%, 100% 100%, 0 99%, 0 71%, 11% 65%, 29% 62%, 47% 64%);
-    z-index: -1;
-    
-    animation-name: backroundAnim;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
 }

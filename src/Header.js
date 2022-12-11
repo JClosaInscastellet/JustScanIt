@@ -11,8 +11,7 @@ export class Header extends React.Component {
             <Link to="/Login">
                 <a className="anchor">Login</a>
             </Link>
-            <button>Join us!</button>
-
+            <Link to="/Register"><button>Join us!</button></Link>
         </div>
     }
     render() {

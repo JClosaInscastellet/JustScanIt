@@ -1,48 +1,136 @@
 .loggedBody{
-    padding-top: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
     
 }
 .logedHeader {
+    padding-top: 1vh;
+    background-color: white;
+    width: 100%;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
+}
+.logomenu{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
 }
 .logedHeader img{
-    width: 60%;
+    width: 100%;
 }
 
 .menuLinks{
-    margin-top: 10px;
+    border-radius: 0px 0px 40px 40px;   
     transition: 0.5s;
     background-color: #318c86;
-    width: 100%;
+    width: 40%;
     display: flex;
     justify-content:space-between;
     align-items: center;
-
+    display: flex;
+    overflow:hidden;
 }
 .menuLinks a{
     width: 100%;
 }
 .menuLinks button{
+    font-size: large;
     background-color: #318c86;
     padding: 10px;
     text-decoration: none;
-    font-style: unset;
+    font-style: none;
+    text-emphasis-style: none;
     font-family: Roboto;
     color: white;
     border-width: 0px 1px 0px 1px;
     border-color: white;
     width:100%;  
+    display: block;
 }
-
+.fa-home{
+    font-size: 50px;
+    margin-top: 35px;
+    color: #3EADA6;
+}
 .fa-bars{
     font-size: 50px;
     margin-top: 20px;
     color: #3EADA6;
+    display: none;
     
+}
+@media only screen and (max-width: 720px){
+    .fa-home{
+        font-size: 50px;
+        margin-top: 20px;
+        color: #3EADA6;
+    }
+    .fa-bars{
+        font-size: 50px;
+        margin-top: 20px;
+        color: #3EADA6;
+        display: flex;
+        
+    }
+    .loggedBody{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .logedHeader {
+        padding-top: 1vh;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .logomenu{
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .logedHeader img{
+        width: 65%;
+    }
+    
+    .menuLinks{
+        transition: 0.5s;
+        background-color: #318c86;
+        width: 100%;
+        display: none;
+        justify-content:space-between;
+        align-items: center;
+    
+    }
+    .menuLinks a{
+        width: 100%;
+    }
+    .menuLinks button{
+        text-decoration-color: rgba(0, 0, 0, 0);
+        background-color: #318c86;
+        padding: 10px;
+        text-decoration: none;
+        
+        font-family: Roboto;
+        color: white;
+        border-width: 0px 1px 0px 1px;
+        border-color: white;
+        width:100%;  
+    }
+    
+    .fa-bars{
+        font-size: 50px;
+        margin-top: 20px;
+        color: #3EADA6;
+        
+    }
 }
