@@ -46,6 +46,16 @@ export class Register extends React.Component {
 
     }
     caccount(event){
+        this.users = JSON.parse(localStorage.getItem("users"));
+        console.log(this.users);
+        this.users.push({username:this.state.mail,
+                         password:this.state.password,
+                        name:this.state.name,
+                        lastname:this.state.lastname,
+                        birthdate:this.state.birthdate,
+                        products:[]});
+        console.log(this.users);
+        localStorage.setItem("users",JSON.stringify(this.users));
         
     }
     homepage() {
